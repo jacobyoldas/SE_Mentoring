@@ -105,4 +105,7 @@ public class BasePOM {
 
   }
 
+  protected static List<String> getActualFooterLinkLists() {
+
+  }
 }
