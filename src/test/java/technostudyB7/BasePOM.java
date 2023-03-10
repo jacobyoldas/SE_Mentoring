@@ -105,7 +105,14 @@ public class BasePOM {
 
   }
 
-  protected static List<String> getActualFooterLinkLists() {
+  public static List<String> getActualFooterLinkLists() {
 
+    List<String> returList=new ArrayList<>();
+
+    List<WebElement> elements =driver.findElements(By.cssSelector("body  footer  div  div:nth-child(1)  ul  li a"));
+    for ( WebElement links : elements ) {
+      returList.add(links.getText());
+    }
+    return returList;
   }
 }
