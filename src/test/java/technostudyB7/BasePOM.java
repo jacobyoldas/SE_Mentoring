@@ -68,7 +68,7 @@ public class BasePOM {
   public static void clickLinks(String category) {
 
     element = driver.findElement(
-        By.xpath("//div[@id='navbar-brand-centered']//a[contains(text(),'" + category + "')]"));
+        By.xpath("//a[contains(text(),'" + category + "')]"));
 
     element.click();
 
@@ -114,5 +114,13 @@ public class BasePOM {
       returList.add(links.getText());
     }
     return returList;
+  }
+
+  public static String getPageHeader() {
+
+    element = driver.findElement(By.cssSelector("h1,h2,h3,p"));
+
+    return element.getText().trim();
+
   }
 }
