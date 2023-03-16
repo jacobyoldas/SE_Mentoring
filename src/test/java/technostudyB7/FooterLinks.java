@@ -25,7 +25,7 @@ public class FooterLinks extends BasePOM{
 
     // verify the link functionality works
     // key-> value
-    //HasMap : Using unorder
+    //HasMap : Using unordered
     //TreeMap : Using key's natural order
     //LinkedHashMap : Using insertion order
 
