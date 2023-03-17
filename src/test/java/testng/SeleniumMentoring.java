@@ -1,4 +1,4 @@
-package technostudyB7;
+package testng;
 
 import java.util.Arrays;
 import java.util.List;

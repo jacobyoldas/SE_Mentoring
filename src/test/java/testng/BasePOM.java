@@ -1,6 +1,7 @@
-package technostudyB7;
+package testng;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
+import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 import org.openqa.selenium.By;
@@ -29,7 +30,7 @@ public class BasePOM {
 
     driver.manage().window().maximize();
 
-    wait= new WebDriverWait(driver,3);
+    wait= new WebDriverWait(driver,Duration.ofSeconds(15));
 
     driver.get("http://demo.seleniumeasy.com/");
   }
