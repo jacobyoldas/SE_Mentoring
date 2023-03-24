@@ -29,4 +29,17 @@ public class _01_LoginPageElements extends BaseMethods {
   public static final By signInButton = By.xpath ("//input[@value='Sign in']");
 
 
+  public By getUsernameInput(){
+    return usernameInput;
+  }
+  public By getPasswordInput(){
+    return passwordInput;
+  }
+
+
+  public void loginNoParam() {
+    sendKeys(usernameInput,"username");
+    sendKeys(passwordInput,"password");
+    click(signInButton);
+  }
 }

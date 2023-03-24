@@ -24,7 +24,7 @@ public class Driver_Hooks {
   public void setup() {
     driver.get("http://zero.webappsecurity.com/login.html");
     driver.manage().window().maximize();
-//    lp.loginNoParam();
+    lp.loginNoParam();
   }
 
   @After
