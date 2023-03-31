@@ -1,7 +1,8 @@
 Feature: Add New Payee Functionality
 
   Background:
-
+#    When User enter valid "<username>" and "<password>"
+#    Then User should login successfully
     And User navigate to online banking page
     When Click pay bills module
     Then Click add new payee module
@@ -15,4 +16,5 @@ Feature: Add New Payee Functionality
       | payeeName | payeeAddress | account         | payeeDetails |
       | user1     | 1234 Blvd    | Bank of America | $Rich        |
 
-  Scenario : Add New Payee as negative test
+#    todo: Complete scenario
+  Scenario: Add New Payee as negative test

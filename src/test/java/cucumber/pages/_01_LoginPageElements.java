@@ -37,7 +37,12 @@ public class _01_LoginPageElements extends BaseMethods {
     return passwordInput;
   }
 
+  public void login(String username, String password) {
 
+    sendKeys(usernameInput,username);
+    sendKeys(passwordInput,password);
+    click(signInButton);
+  }
   public void loginNoParam() {
     sendKeys(usernameInput,"username");
     sendKeys(passwordInput,"password");

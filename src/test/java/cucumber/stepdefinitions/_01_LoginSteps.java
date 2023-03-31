@@ -1,13 +1,11 @@
-package cucumber.stepdefinitions;
+package cucumber.stepDefinitions;
 
 import cucumber.pages._01_LoginPageElements;
 import cucumber.pages._02_HomePageElements;
 import cucumber.utilities.Driver_Base;
 import cucumber.utilities.ParentMethods;
 import io.cucumber.datatable.DataTable;
-import io.cucumber.java.en.Given;
-import io.cucumber.java.en.Then;
-import io.cucumber.java.en.When;
+import io.cucumber.java.en.*;
 import java.util.List;
 
 public class _01_LoginSteps {

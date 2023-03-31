@@ -15,7 +15,8 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelUtility {
-// Todo: Check out these codes and do code review with peers
+
+// todo: Check out these codes and do code review with peers
 
   public static ArrayList< ArrayList< String > > getListData(String path, String sheetName, int columnCount){
     ArrayList<ArrayList< String >> data=new ArrayList<>();
