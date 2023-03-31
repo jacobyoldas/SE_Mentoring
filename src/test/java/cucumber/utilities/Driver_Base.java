@@ -1,5 +1,7 @@
 package cucumber.utilities;
 
+import static cucumber.utilities.BaseMethods.setWait;
+
 import io.github.bonigarcia.wdm.WebDriverManager;
 import java.util.Locale;
 import java.util.logging.Level;
@@ -32,7 +34,9 @@ public class Driver_Base {
   }
 
   public static void quitDriver(){
+
     if (driver != null) { // if there is driver the quit
+//      setWait(5);
       driver.quit();
       driver=null; // if there is not this line then failed coz after quit driver must be null again to open
     }

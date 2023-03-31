@@ -27,6 +27,7 @@ public class _01_LoginPageElements extends BaseMethods {
   private static final By usernameInput = By.cssSelector ("input[name='user_login']");
   private static final By passwordInput = By.cssSelector ("input[name='user_password']");
   public static final By signInButton = By.xpath ("//input[@value='Sign in']");
+  public static final By unSuccessMessage = By.cssSelector ("form[id='login_form']>div");
 
 
   public By getUsernameInput(){
@@ -41,5 +42,18 @@ public class _01_LoginPageElements extends BaseMethods {
     sendKeys(usernameInput,"username");
     sendKeys(passwordInput,"password");
     click(signInButton);
+    Driver_Base.getDriver().navigate().back();
+  }
+
+  public void userEnterInvalidData(String username, String password) {
+    sendKeys(usernameInput,username);
+    sendKeys(passwordInput,password);
+    click(signInButton);
+
+  }
+
+
+  public void unSuccessMessageDisplayed() {
+    assertTrueValidationText(unSuccessMessage,"wrong");
   }
 }

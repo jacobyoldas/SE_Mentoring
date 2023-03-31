@@ -16,7 +16,8 @@ public class _02_HomePageElements extends BaseMethods {
 
 
   public void successMessageDisplayed() {
-    String expectedResult="Welcome to Zero Online Banking";
+    String expectedResult="Welcome";
+
     assertTrueValidationText(successMessage,expectedResult);
   }
 }

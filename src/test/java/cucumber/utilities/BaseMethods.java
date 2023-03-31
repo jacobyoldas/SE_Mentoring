@@ -91,7 +91,7 @@ public class BaseMethods {
 
   public void assertTrueValidationText(By locator, String text) {
     waitUntilElementVisibleAndClickable(locator);
-    Assert.assertTrue( driver.findElement(locator).getText().toLowerCase().contains(text.toLowerCase()));
+    Assert.assertTrue(driver.findElement(locator).getText().toLowerCase().contains(text.toLowerCase()));
   }
 
   public void scrollIntoView(By locator) {
